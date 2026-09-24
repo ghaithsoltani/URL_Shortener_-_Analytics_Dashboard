@@ -25,6 +25,7 @@
 
 ## 1. Architecture Overview
 
+<<<<<<< HEAD
 ```
 ┌─────────────┐       POST /api/urls        ┌──────────────────┐
 │   Angular    │ ───────────────────────────▶│   Spring Boot     │
@@ -46,6 +47,13 @@
                                                                        ▼
                                                                   Grafana
 ```
+=======
+![Architecture Diagram](image/ChatGPT%20Image%20Sep%2024%2C%202026%2C%2007_36_26%20PM.png)
+
+> Diagram source: `image/ChatGPT Image Sep 24, 2026, 07_36_26 PM.png` — kept
+> alongside this file in the repo root (same level as `pom.xml`, `README.md`).
+> Renders automatically on GitHub, GitLab, and most Markdown viewers/IDEs.
+>>>>>>> 1a0d279 (added Image to explain the architectur)
 
 **Core design decisions, up front:**
 
@@ -883,4 +891,8 @@ system will need:
 
 **Next:** Project 2 — a distributed job scheduler with a message queue
 (RabbitMQ/Kafka) and horizontally scaled workers, where these same lessons
+<<<<<<< HEAD
 show up again but across process boundaries instead of within one service.
+=======
+show up again but across process boundaries instead of within one service.
+>>>>>>> 1a0d279 (added Image to explain the architectur)
