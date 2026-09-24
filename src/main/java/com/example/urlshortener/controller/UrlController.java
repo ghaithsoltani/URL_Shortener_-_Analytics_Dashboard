@@ -6,7 +6,7 @@ import com.example.urlshortener.entity.ShortUrl;
 import com.example.urlshortener.service.UrlService;
 import com.example.urlshortener.dto.*;
 import jakarta.validation.Valid;
-import lombok.Value;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
