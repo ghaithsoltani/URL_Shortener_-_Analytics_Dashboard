@@ -24,30 +24,6 @@
 ---
 
 ## 1. Architecture Overview
-
-<<<<<<< HEAD
-```
-┌─────────────┐       POST /api/urls        ┌──────────────────┐
-│   Angular    │ ───────────────────────────▶│   Spring Boot     │
-│  (port 4200) │ ◀─────────────────────────── │   (port 8080)     │
-└─────────────┘        UrlResponse            └──────────────────┘
-                                                       │
-                              GET /{code}              │
-                          ┌────────────────────────────┼──────────────┐
-                          ▼                             ▼              ▼
-                  ┌───────────────┐          ┌──────────────┐  ┌─────────────┐
-                  │ Caffeine Cache │──miss──▶│  H2 / SQL DB  │  │ Async Thread │
-                  │ (urlResolution)│          │ short_urls    │  │ Pool         │
-                  └───────────────┘          │ click_events  │  │ (analytics)  │
-                                              └──────────────┘  └─────────────┘
-                                                                       │
-                                                                       ▼
-                                                              Prometheus (scrape)
-                                                                       │
-                                                                       ▼
-                                                                  Grafana
-```
-=======
 ![Architecture Diagram](image/ChatGPT%20Image%20Sep%2024%2C%202026%2C%2007_36_26%20PM.png)
 
 > Diagram source: `image/ChatGPT Image Sep 24, 2026, 07_36_26 PM.png` — kept
